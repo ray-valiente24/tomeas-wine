@@ -21,6 +21,33 @@
           "type": "minecraft:model",
           "model": "tomeas-wine:item/wine"
         }
+      },
+      {
+        "when": {
+          "potion": "tomeas-wine:whiskey"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "tomeas-wine:item/whiskey"
+        }
+      },
+      {
+        "when": {
+          "potion": "tomeas-wine:brandy"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "tomeas-wine:item/brandy"
+        }
+      },
+      {
+        "when": {
+          "potion": "tomeas-wine:vodka"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "tomeas-wine:item/vodka"
+        }
       }
     ],
     "fallback": {
