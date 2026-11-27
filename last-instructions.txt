@@ -1,0 +1,71 @@
+
+Step 2: Create the 2 Item Model JSONs for Your Textures
+
+1. Right-click assets.tomeas-wine → New → Directory → type models/item and press Enter.
+2. Right-click that new item folder → New → File → name it wine.json and paste:json
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tomeas-wine:item/wine"
+  }
+}
+Use code with caution.
+3. Right-click the same item folder → New → File → name it beer.json and paste:json
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tomeas-wine:item/beer"
+  }
+}
+Use code with caution.
+
+Step 3: Tell minecraft:potion to Use Your Models for Wine & Beer
+
+In modern Minecraft (26.1.2), minecraft:potion uses a select model definition (assets/minecraft/items/potion.json) to check which potion is inside the bottle:
+1. Right-click resources (right above assets.tomeas-wine) → New → Directory → type assets/minecraft/items and press Enter.
+2. Right-click that new items folder → New → File → name it potion.json and paste this in:
+json
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:potion_contents",
+    "cases": [
+      {
+        "when": {
+          "potion": "tomeas-wine:wine"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "tomeas-wine:item/wine"
+        }
+      },
+      {
+        "when": {
+          "potion": "tomeas-wine:beer"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "tomeas-wine:item/beer"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/potion",
+      "tints": [
+        {
+          "type": "minecraft:potion",
+          "default": -13083194
+        }
+      ]
+    }
+  }
+}
+Use code with caution.
+(How this works: When the bottle contains tomeas-wine:wine or tomeas-wine:beer, it renders your untinted 64×64 sprite. For every vanilla potion, fallback keeps the normal tinted potion bottle).
+
+Step 4: Restart Minecraft Client
+
+Click Stop (■) and Play (▶) in IntelliJ—your Wine and Beer bottles in your Creative tab and hotbar will now show your custom 64×64 art!
+Once you put the files in and test them in-game, let me know if your 64×64 sprites render cleanly—or if you want to build the final .jar file to share/play outside IntelliJ next!

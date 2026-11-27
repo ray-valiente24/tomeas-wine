@@ -1,0 +1,37 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:potion_contents",
+    "cases": [
+      {
+        "when": {
+          "potion": "tomeas-wine:beer"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "tomeas-wine:item/beer"
+        }
+      },
+      {
+        "when": {
+          "potion": "tomeas-wine:wine"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "tomeas-wine:item/wine"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/potion",
+      "tints": [
+        {
+          "type": "minecraft:potion",
+          "default": -13083194
+        }
+      ]
+    }
+  }
+}

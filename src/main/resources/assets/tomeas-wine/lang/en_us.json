@@ -1,0 +1,28 @@
+{
+  "item.minecraft.potion.effect.wine": "Wine",
+  "item.minecraft.splash_potion.effect.wine": "Splash Wine",
+  "item.minecraft.lingering_potion.effect.wine": "Lingering Wine",
+  "item.minecraft.tipped_arrow.effect.wine": "Arrow of Wine",
+
+  "item.minecraft.potion.effect.beer": "Beer",
+  "item.minecraft.splash_potion.effect.beer": "Splash Beer",
+  "item.minecraft.lingering_potion.effect.beer": "Lingering Beer",
+  "item.minecraft.tipped_arrow.effect.beer": "Arrow of Beer",
+
+  "item.minecraft.potion.effect.whiskey": "Whiskey",
+  "item.minecraft.splash_potion.effect.whiskey": "Splash Whiskey",
+  "item.minecraft.lingering_potion.effect.whiskey": "Lingering Whiskey",
+  "item.minecraft.tipped_arrow.effect.whiskey": "Arrow of Whiskey",
+
+  "item.minecraft.potion.effect.brandy": "Brandy",
+  "item.minecraft.splash_potion.effect.brandy": "Splash Brandy",
+  "item.minecraft.lingering_potion.effect.brandy": "Lingering Brandy",
+  "item.minecraft.tipped_arrow.effect.brandy": "Arrow of Brandy",
+
+  "item.minecraft.potion.effect.vodka": "Vodka",
+  "item.minecraft.splash_potion.effect.vodka": "Splash Vodka",
+  "item.minecraft.lingering_potion.effect.vodka": "Lingering Vodka",
+  "item.minecraft.tipped_arrow.effect.vodka": "Arrow of Vodka",
+
+  "itemGroup.tomeas-wine.tomeas_wine_tab": "Tomea's Wine & Beer"
+}

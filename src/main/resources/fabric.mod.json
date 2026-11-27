@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "tomeas-wine",
+	"version": "${version}",
+	"name": "Tomea's Wine",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tomeas-wine/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.tomea.TomeaSWine"
+		],
+		"client": [
+			"com.tomea.client.TomeaSWineClient"
+		],
+		"fabric-datagen": [
+			"com.tomea.client.TomeaSWineDataGenerator"
+		]
+	},
+	"mixins": [
+		"tomeas-wine.mixins.json",
+		{
+			"config": "tomeas-wine.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
