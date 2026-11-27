@@ -1,4 +1,3 @@
-cat <<'EOF' > README.md
 # Tomea's Wine & Beer
 
 A Minecraft **26.1.2 (Fabric)** mod that adds **5 brewable liquors**, custom `32×32` bottle textures, global server drinking announcements, and a **27-slot Beer Crate** storage block.
