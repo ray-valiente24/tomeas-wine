@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tomeas-wine:block/beer_crate"
+    }
+  }
+}

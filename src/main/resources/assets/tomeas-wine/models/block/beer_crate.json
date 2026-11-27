@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "tomeas-wine:block/beer_crate_top",
+    "side": "tomeas-wine:block/beer_crate_side",
+    "bottom": "tomeas-wine:block/beer_crate_bottom"
+  }
+}

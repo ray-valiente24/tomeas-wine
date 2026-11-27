@@ -1,5 +1,6 @@
 package com.tomea;
 
+import com.tomea.block.ModBlocks;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -17,14 +18,15 @@ public class ModItemGroups {
                     .title(Component.translatable("itemGroup.tomeas-wine.tomeas_wine_tab"))
                     .icon(() -> PotionContents.createItemStack(Items.POTION, ModPotions.WINE))
                     .displayItems((context, entries) -> {
-                        // Drinkable Bottles (All 5)
+
+                        entries.accept(ModBlocks.BEER_CRATE);
+
                         entries.accept(PotionContents.createItemStack(Items.POTION, ModPotions.WINE));
                         entries.accept(PotionContents.createItemStack(Items.POTION, ModPotions.BEER));
                         entries.accept(PotionContents.createItemStack(Items.POTION, ModPotions.WHISKEY));
                         entries.accept(PotionContents.createItemStack(Items.POTION, ModPotions.BRANDY));
                         entries.accept(PotionContents.createItemStack(Items.POTION, ModPotions.VODKA));
 
-                        // Splash Bottles (Optional - delete these if you don't want splash variants in your tab)
                         entries.accept(PotionContents.createItemStack(Items.SPLASH_POTION, ModPotions.WINE));
                         entries.accept(PotionContents.createItemStack(Items.SPLASH_POTION, ModPotions.BEER));
                         entries.accept(PotionContents.createItemStack(Items.SPLASH_POTION, ModPotions.WHISKEY));

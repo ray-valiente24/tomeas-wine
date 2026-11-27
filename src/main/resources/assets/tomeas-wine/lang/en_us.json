@@ -24,5 +24,8 @@
   "item.minecraft.lingering_potion.effect.vodka": "Lingering Vodka",
   "item.minecraft.tipped_arrow.effect.vodka": "Arrow of Vodka",
 
+  "block.tomeas-wine.beer_crate": "Beer Crate",
+  "container.tomeas-wine.beer_crate": "Beer Crate",
+
   "itemGroup.tomeas-wine.tomeas_wine_tab": "Tomea's Wine & Beer"
 }

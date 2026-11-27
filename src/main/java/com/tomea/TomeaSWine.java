@@ -1,5 +1,7 @@
 package com.tomea;
 
+import com.tomea.block.ModBlocks;
+import com.tomea.block.entity.ModBlockEntities;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -23,6 +25,8 @@ public class TomeaSWine implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		ModPotions.initialize();
+		ModBlocks.initialize();
+		ModBlockEntities.initialize();
 		ModItemGroups.initialize();
 	}
 
