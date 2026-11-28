@@ -1,9 +1,14 @@
-#
-# https://help.github.com/articles/dealing-with-line-endings/
-#
-# Linux start script should use lf
-/gradlew        text eol=lf
+# Auto-detect text files and normalize line endings to LF in the repository
+* text=auto eol=lf
 
-# These are Windows script files and should use crlf
-*.bat           text eol=crlf
+# Force Windows batch files to keep CRLF so Windows can run them properly
+*.bat text eol=crlf
 
+# Ensure Linux shell scripts and Gradle wrapper always use LF
+*.sh text eol=lf
+gradlew text eol=lf
+
+# Treat binary files (textures, sounds, jars) as binary so Git never alters them
+*.png binary
+*.ogg binary
+*.jar binary
